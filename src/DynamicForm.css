@@ -1,0 +1,176 @@
+
+body {
+    background-image:  url('image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    font-family: "Zen Dots", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+
+.form-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.85); 
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15), -10px -10px 20px rgba(255, 255, 255, 0.5);
+    animation: bounceIn 0.7s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 -10px 15px rgba(255, 255, 255, 0.6);
+}
+
+/* Form title */
+.form-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff5c7a;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Dropdown styling */
+.form-select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 12px;
+    font-family: "Zen Dots", sans-serif;
+    background: rgba(255, 244, 244, 0.85); 
+    box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.1), inset -4px -4px 6px rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+}
+
+.form-select:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+    text-transform: capitalize;
+}
+
+/* Input fields */
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    background: rgba(255, 244, 244, 0.85);
+    box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.1), inset -4px -4px 6px rgba(255, 255, 255, 0.7);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.8);
+    transform: scale(1.02);
+}
+
+/* Submit button */
+.submit-button {
+    padding: 12px 20px;
+    background: linear-gradient(145deg, #ff7eb3, #ff758c);
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    font-family: "Zen Dots", sans-serif;
+    cursor: pointer;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2), -4px -4px 6px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background: linear-gradient(145deg, #ff758c, #ff5c7a); 
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3), -6px -6px 10px rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Progress bar */
+.progress-bar-container {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.038);
+}
+
+.progress-bar {
+    height: 12px;
+    background: linear-gradient(145deg, rgb(206, 52, 147), #a7287f);
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+/* Progress text */
+.progress-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Submitted data table */
+.submitted-data-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.submitted-data-table th,
+.submitted-data-table td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.submitted-data-table th {
+    background-color: #ff5c7a;
+    color: #fff;
+}
+
+.submitted-data-table td {
+    background-color: #ff5c7a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-title {
+        font-size: 20px;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+}
