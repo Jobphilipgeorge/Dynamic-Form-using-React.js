@@ -36,9 +36,15 @@
 
 ### 🌐 Home Page  
  
-*A clean and responsive layout for easy navigation.*  
+*A clean and responsive layout for easy navigation.* 
+
+![home](./ss/home.png) 
 
 ### ✍ Form Example  
+
+![user](.ss/user.png)
+![user](.ss/address.png)
+![user](.ss/pay.png)
 
 *Dynamic fields with error handling and progress tracking.*  
 
